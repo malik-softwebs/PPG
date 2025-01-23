@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* Floating Toggle Button Styles */
+.floating-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 9999;
+  transition: background-color 0.3s ease;
+}
+
+.floating-toggle:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.floating-toggle.dark-mode {
+  background-color: #333333;
+}
+
+/* Material Icon Style */
+.material-icons {
+  font-size: 24px;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+.floating-toggle.dark-mode .material-icons {
+  color: #ffffff;
+}
+
+/* Light and Dark Mode Themes */
+body.light-mode {
+  background-color: #f0f0f0;
+  color: #000000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  backgrond: linear-gradient(33deg, #FCC6FF, #98D8EF, #FFEB00, #16C47F, #FF8383);
+  color: #333;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header {
+  background-color: #6200ea;
+  color: white;
+  padding: 0rem 0rem;
+  text-align: center;
+}
+.container {
+  margin: 20px auto;
+  max-width: 800px;
+}
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+ margin-right: 10px;
+}
+.search-bar input,
+.search-bar select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+.search-button {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.search-button button {
+  background-color: #6200ea;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.search-button button:hover {
+  background-color: #3700b3;
+}
+.results {
+  background: transparent;
+  padding: 20px;
+  border-radius: 5px;
+
+  height: 100%;
+}
+.result-item {
+  margin-bottom: 15px;
+}
+.result-item h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #6200ea;
+}
+.result-item p {
+  margin: 5px 0;
+}
+
+
+/* From Uiverse.io by boryanakrasteva */ 
+.input-container {
+  width: 95%;
+  position: relative;
+  border-radius: 22px;
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  top: calc(50% + 5px);
+  transform: translateY(calc(-50% - 5px));
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  transition: .2s linear;
+  border: 2.5px solid black;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.input:focus {
+  outline: none;
+  border: 0.5px solid black;
+  box-shadow: -5px -5px 0px black;
+}
+
+.input-container:hover > .icon {
+  animation: anim 1s linear infinite;
+}
+
+@keyframes anim {
+  0%,
+  100% {
+    transform: translateY(calc(-50% - 5px)) scale(1);
+  }
+
+  50% {
+    transform: translateY(calc(-50% - 5px)) scale(1.1);
+  }
+}
+
+
+
+
+
+svg {
+	font-family: "Comfortaa", sans-serif;
+	width: 100%;
+	height: 100%;
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 1;
+	stroke: #FFFFFF;
+	font-size: 30px;
+}
+@keyframes stroke {
+	0%   {
+		fill: #FFFFFF00; stroke: rgba(255,255,255,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 1;
+	}
+	70%  {
+	  fill: #FFFFFF00; stroke: white;
+	}
+	80%  {
+	  fill: #FFFFFF00; stroke: rgba(255,255,255,1); stroke-width: 1;
+	}
+	100% {
+		fill: rgba(255,255,255,1); stroke: rgba(255,255,255,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 1;
+	}
+}
+
+.wrapper {
+    background-color: #6200ea;
+}
+
+
+/* From Uiverse.io by anniekoop */ 
+.card-data {
+ 
+  background-color: #f2f3f7;
+  border-radius: 0.75em;
+  cursor: pointer;
+  transition: ease 0.2s;
+  border: 1.5px solid #f2f3f7;
+}
+
+.card-data:hover {
+  background-color: #d3ddf1;
+  border: 1.5px solid #1677ff;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.container-result {
+  margin-top: 1.25em;
+  margin-bottom: 1.375em;
+  margin-left: 1.375em;
+  margin-right: 2em;
+  flex-direction: row;
+  gap: 0.75em;
+}
+
+.status-ind {
+  width: 0.625em;
+  height: 0.625em;
+  background-color: #ff0000;
+  margin: 0.375em;
+  border-radius: 0.5em;
+}
+
+.text-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25em;
+  color: #333;
+}
+
+.time {
+  font-size: 0.875em;
+  color: #777;
+}
+
+.text-link {
+  font-weight: 500;
+  text-decoration: none;
+  color: #6200ea;
+}
+
+.button-wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
+}
+
+.secondary-cta {
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #666;
+  cursor: pointer;
+}
+
+.primary-cta {
+  font-size: 15px;
+  background-color: transparent;
+  font-weight: 600;
+  color: #1677ff;
+  border: none;
+  border-radius: 1.5em;
+  cursor: pointer;
+}
+
+button:hover {
+  text-decoration: underline;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875em;
+}
+
+
+
+/* From Uiverse.io by elijahgummer */ 
+.tooltip-container {
+  --background-tooltip-container: #2ea44f; /* GitHub green color */
+  position: relative;
+  background: var(--background-tooltip-container);
+  cursor: pointer;
+  transition: all 0.2s;
+  width: 16px;
+  height: 16px;
+  border-radius: 6px;
+  font-size: 17px;
+}
+
+.tooltip {
+  --background-tooltip: #6e7681; /* Default background color for tooltip */
+  position: absolute;
+  top: -39px; /* Adjusted top position */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5em;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  background: var(--background-tooltip);
+  color: white; /* Text color */
+  border-radius: 5px;
+  width: 210px;
+  height: 30px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  height: 0.6em;
+  width: 0.6em;
+  bottom: -0.2em;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  background: var(
+    --background-tooltip
+  ); /* Use the same background color as the tooltip */
+}
+
+.tooltip-container:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
