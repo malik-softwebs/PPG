@@ -22,12 +22,7 @@ function searchGames() {
       gameElement.innerHTML = `
       <div class="card-data">
           <div class="status-ind">
-              <!-- From Uiverse.io by elijahgummer --> 
-<div class="tooltip-container">
-  <span class="tooltip">8 contributions on March 8th.</span>
-  <span class="text"></span>
-</div>
-
+              
           </div>
           <div class="container-result">
         <h3>${game.name}</h3>
