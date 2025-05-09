@@ -21,9 +21,7 @@ function searchGames() {
       gameElement.classList.add("result-item");
       gameElement.innerHTML = `
       <div class="card-data">
-          <div class="status-ind">
-              
-          </div>
+          
           <div class="container-result">
         <h3>${game.name}</h3>
         <p><strong>Description:</strong> ${game.description}</p>
